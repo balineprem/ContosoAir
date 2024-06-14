@@ -14,7 +14,7 @@ resources:
       include:
        - master
 pool:
-  Name: 'Default'
+  name: 'Default'
 
 steps:
 - task: NodeTool@0
