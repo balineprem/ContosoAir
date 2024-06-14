@@ -14,9 +14,13 @@ resources:
       include:
        - master
 pool:
-  vmImage: ubuntu-latest
+  Name: 'Default'
 
 steps:
+- task: NodeTool@0
+  inputs:
+    versionSource: 'spec'
+    versionSpec: '16.x'
 - task: DownloadPipelineArtifact@2
   inputs:
     buildType: 'specific'
